@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://raw.githubusercontent.com; frame-ancestors 'none';">
+  <title>Mohammad Mudassir Khan | Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Mohammad Mudassir Khan - Aspiring Network Engineer and CCNA Enthusiast. Showcasing network topologies, security designs, and automated infrastructure utilities.">
+  <meta name="keywords"
+    content="Mohammad Mudassir Khan, CCNA, Network Engineer, Cisco Packet Tracer, Subnetting, TCP/IP, Routing & Switching, Linux, Cybersecurity, Python Automation">
+  <meta name="author" content="Mohammad Mudassir Khan">
+
+  <!-- Open Graph : Social Share Preview (LinkedIn, WhatsApp, Telegram, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mohammadmudassirmk.github.io/">
+  <meta property="og:title" content="Mohammad Mudassir Khan | Network Engineering Portfolio">
+  <meta property="og:description"
+    content="Portfolio of an Aspiring Network Engineer and CCNA Enthusiast. Discover lab topologies, automated tools, and secure system setups.">
+  <meta property="og:image" content="https://mohammadmudassirmk.github.io/images/og-preview.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'><circle cx='128' cy='128' r='96' fill='none' stroke='black' stroke-width='16'/><circle cx='128' cy='128' r='48' fill='none' stroke='black' stroke-width='12'/><line x1='128' y1='32' x2='128' y2='224' stroke='black' stroke-width='12'/><line x1='32' y1='128' x2='224' y2='128' stroke='black' stroke-width='12'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-grid">
+  <!-- Skip to Content Link -->
+  <a href="#about" class="skip-link">Skip to main content</a>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container menu">
+      <a href="#hero" class="link active-link" aria-label="Home">
+        <span class="link-icon" aria-hidden="true">
+          <!-- Home Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z"
+              fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+          </svg>
+        </span>
+        <span class="link-title">Home</span>
+      </a>
+
+      <a href="#about" class="link" aria-label="About Me">
+        <span class="link-icon" aria-hidden="true">
+          <!-- User Profile Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <circle cx="128" cy="96" r="64" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16">
+            </circle>
+            <path d="M30.989,215.99064a112.03731,112.03731,0,0,1,194.02311.002" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+          </svg>
+        </span>
+        <span class="link-title">About</span>
+      </a>
+
+      <a href="#services" class="link" aria-label="Skills">
+        <span class="link-icon" aria-hidden="true">
+          <!-- Sword Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+            <line x1="100" y1="156" x2="160" y2="96" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="16"></line>
+            <path
+              d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
+              fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+            </path>
+          </svg>
+        </span>
+        <span class="link-title">Skills</span>
+      </a>
+
+      <a href="#projects" class="link" aria-label="Projects">
+        <span class="link-icon" aria-hidden="true">
+          <!-- Projects Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <rect x="32" y="80" width="192" height="136" rx="16" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+            <rect x="96" y="40" width="64" height="40" rx="8" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="16"></rect>
+            <line x1="128" y1="80" x2="128" y2="124" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="16"></line>
+            <circle cx="128" cy="140" r="16" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="16"></circle>
+          </svg>
+        </span>
+        <span class="link-title">Work</span>
+      </a>
+
+      <a href="#contact" class="link" aria-label="Contact">
+        <span class="link-icon" aria-hidden="true">
+          <!-- Contact Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <rect x="32" y="56" width="192" height="144" rx="16" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
+            <line x1="32" y1="56" x2="128" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="16"></line>
+            <line x1="224" y1="56" x2="128" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="16"></line>
+            <circle cx="128" cy="128" r="16" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="16"></circle>
+          </svg>
+        </span>
+        <span class="link-title">Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+    <div class="container hero-content">
+      <h1 class="fade-up delay-1">Hello, I'm <span class="hero-name">Mohammad Mudassir Khan</span></h1>
+
+      <!-- Tagline -->
+      <p class="tagline fade-up delay-2">Network Engineering Student &amp; Full-Stack Web Developer</p>
+      <!-- Let's Talk and View Work buttons -->
+      <div class="hero-cta fade-up delay-2">
+        <a class="fancy" href="#contact">
+          <span class="top-key" aria-hidden="true"></span>
+          <span class="text">Let's Talk</span>
+          <span class="bottom-key-1" aria-hidden="true"></span>
+          <span class="bottom-key-2" aria-hidden="true"></span>
+        </a>
+        <a class="fancy" href="#projects" style="margin-left: 1rem;">
+          <span class="top-key" aria-hidden="true"></span>
+          <span class="text">View Work</span>
+          <span class="bottom-key-1" aria-hidden="true"></span>
+          <span class="bottom-key-2" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- stats strip -->
+      <div class="hero-stats fade-up delay-3" aria-label="Network status metrics">
+        <div class="hero-stat">
+          <span class="hero-stat-label">Uptime</span>
+          <span class="hero-stat-value" data-count="99.9" data-suffix="%">0</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-label">CGPA</span>
+          <span class="hero-stat-value" data-count="9.1" data-suffix=" / 10">0</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-label">Status</span>
+          <span class="hero-stat-value">CCNA Prep</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-label">Stack</span>
+          <span class="hero-stat-value">Cisco · Python · Web</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">About Me</h2>
+      <div class="divider fade-up delay-1" aria-hidden="true"></div>
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="about-text fade-up delay-2">
+            Currently learning <strong>Network Engineering and CCNA</strong>, with a strong foundation in networking
+            fundamentals, IP addressing, routing, switching, and network protocols through academic studies and hands-on
+            practice. Comfortable using modern AI tools to improve productivity, speed up learning, and assist with
+            technical problem-solving.
+          </p>
+          <p class="about-text fade-up delay-2"
+            style="margin-top: 1.5rem; font-size: 1.1rem; color: var(--color-text-muted);">
+            Always eager to learn new technologies, build practical skills, and take on new challenges, with a long-term
+            interest in <strong>cybersecurity and network security</strong>. Completed a <strong>B.Sc. in Information
+              Technology</strong> (2023 - 2026) with an academic record of <strong>CGPA 9.1</strong>.
+          </p>
+
+          <!-- About Summary Tags -->
+          <div class="about-highlights fade-up delay-3">
+            <div class="highlight-chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none"
+                stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M128,16a80,80,0,0,0-80,80c0,72,80,144,80,144s80-72,80-144A80,80,0,0,0,128,16Z" />
+                <circle cx="128" cy="96" r="32" />
+              </svg>
+              <span>Mumbai, India</span>
+            </div>
+            <div class="highlight-chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none"
+                stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <polygon
+                  points="128 16 16 104 48 104 48 224 112 224 112 160 144 160 144 224 208 224 208 104 240 104 128 16" />
+              </svg>
+              <span>B.Sc. IT (2023 - 2026)</span>
+            </div>
+            <div class="highlight-chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none"
+                stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M128,136a8,8,0,0,1-8-8V40a8,8,0,0,1,16,0v88A8,8,0,0,1,128,136Z" />
+                <path d="M216,128A88,88,0,1,1,76.68,53.26" />
+                <polyline points="128 128 184 96" />
+              </svg>
+              <span>CCNA Candidate</span>
+            </div>
+            <div class="highlight-chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none"
+                stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <polygon points="128 16 160 96 248 104 184 160 200 248 128 208 56 248 72 160 8 104 96 96 128 16" />
+              </svg>
+              <span>CGPA 9.1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Training Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Experience &amp; Training</h2>
+      <div class="divider fade-up delay-1" aria-hidden="true"></div>
+
+      <div class="timeline fade-up delay-2">
+        <!-- Timeline Item 1: CCNA -->
+        <div class="timeline-item">
+          <div class="timeline-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor"
+              stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="24" y="80" width="208" height="96" rx="8" />
+              <line x1="24" y1="128" x2="232" y2="128" />
+              <circle cx="76" cy="128" r="12" fill="currentColor" />
+              <circle cx="128" cy="128" r="12" fill="currentColor" />
+              <circle cx="180" cy="128" r="12" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="timeline-date">2026 – Present</div>
+          <div class="timeline-content">
+            <h3>Cisco CCNA Preparation</h3>
+            <p>Developing deep expertise in networking topologies, routing protocols (OSPF, static routing), VLSM
+              subnetting, VLAN trunking, and access control lists (ACLs). Simulating complex campus networks within
+              Cisco Packet Tracer.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Full-Stack Web Development -->
+        <div class="timeline-item">
+          <div class="timeline-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor"
+              stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="64 88 16 128 64 168"></polyline>
+              <polyline points="192 88 240 128 192 168"></polyline>
+              <line x1="160" y1="40" x2="96" y2="216"></line>
+            </svg>
+          </div>
+          <div class="timeline-date">2025 – Present</div>
+          <div class="timeline-content">
+            <h3>Freelancing</h3>
+            <p><strong>Independent &amp; Project-based</strong></p>
+            <p>Built and maintained multiple full-stack web applications using Python-based frameworks. Implemented
+              authentication, role-based access control, REST APIs, and database integration while focusing on secure
+              development practices and user experience.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: B.Sc. IT -->
+        <div class="timeline-item">
+          <div class="timeline-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="currentColor"
+              stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="128 32 24 88 128 144 232 88 128 32" />
+              <polyline points="52 104 52 176 128 224 204 176 204 104" />
+            </svg>
+          </div>
+          <div class="timeline-date">2023 – 2026</div>
+          <div class="timeline-content">
+            <h3>B.Sc. in Information Technology</h3>
+            <p><strong>Maharashtra College of Arts, Science &amp; Commerce</strong></p>
+            <p>Completed with a strong CGPA of 9.1. Core coursework includes computer networks, databases
+              (PostgreSQL/SQL), web technologies, and software engineering.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title fade-up">My Skills &amp; Core Focus</h2>
+      <div class="divider fade-up delay-1" aria-hidden="true"></div>
+
+      <div class="grid services-grid">
+        <div class="card card-service fade-up">
+          <span class="card-index" aria-hidden="true">01</span>
+          <div class="skill-icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none"
+              stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="128" cy="128" r="96"></circle>
+              <circle cx="128" cy="128" r="48"></circle>
+              <line x1="128" y1="32" x2="128" y2="80"></line>
+              <line x1="128" y1="176" x2="128" y2="224"></line>
+              <line x1="32" y1="128" x2="80" y2="128"></line>
+              <line x1="176" y1="128" x2="224" y2="128"></line>
+            </svg>
+          </div>
+          <h3>Networking &amp; CCNA</h3>
+          <p>TCP/IP, Subnetting, Routing &amp; Switching, DHCP, VLANs, Trunking, Cisco Packet Tracer Simulations</p>
+          <div class="tech-tags">
+            <span class="tech-tag">TCP/IP</span><span class="tech-tag">Subnetting</span>
+            <span class="tech-tag">Routing &amp; Switching</span><span class="tech-tag">DHCP</span>
+          </div>
+        </div>
+        <div class="card card-service fade-up delay-1">
+          <span class="card-index" aria-hidden="true">02</span>
+          <div class="skill-icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none"
+              stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="40" y="40" width="176" height="176" rx="8" fill="none" />
+              <path d="M96,96 L160,160 M160,96 L96,160" />
+            </svg>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>Security Fundamentals, Network Security Basics</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Security Fundamentals</span><span class="tech-tag">Network Security</span>
+          </div>
+        </div>
+        <div class="card card-service fade-up delay-2">
+          <span class="card-index" aria-hidden="true">03</span>
+          <div class="skill-icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none"
+              stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="64 88 16 128 64 168"></polyline>
+              <polyline points="192 88 240 128 192 168"></polyline>
+              <line x1="160" y1="40" x2="96" y2="216"></line>
+            </svg>
+          </div>
+          <h3>Full-Stack Web Dev</h3>
+          <p>Frontend: HTML, CSS, JavaScript, .NET. Backend: Flask, Django, Servlet, JSP</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML/CSS</span><span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Python Frameworks</span><span class="tech-tag">.NET</span>
+          </div>
+        </div>
+        <div class="card card-service fade-up delay-3">
+          <span class="card-index" aria-hidden="true">04</span>
+          <div class="skill-icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none"
+              stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="128" cy="80" rx="88" ry="32"></ellipse>
+              <path d="M40,80V176c0,17.67,39.4,32,88,32s88-14.33,88-32V80"></path>
+              <path d="M40,128c0,17.67,39.4,32,88,32s88-14.33,88-32"></path>
+            </svg>
+          </div>
+          <h3>Languages &amp; Databases</h3>
+          <p>Python, Java, C, C++, SQL with PostgreSQL, MySQL, SQLite</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span><span class="tech-tag">Java</span>
+            <span class="tech-tag">PostgreSQL</span><span class="tech-tag">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Certifications</h2>
+      <div class="divider fade-up delay-1" aria-hidden="true"></div>
+
+      <div class="cert-grid">
+
+        <!-- Cert 1: CCNA (In Progress) -->
+        <div class="cert-card fade-up" tabindex="0">
+          <div class="cert-card-top">
+            <div class="cert-issuer-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="none"
+                stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="128" cy="128" r="96"></circle>
+                <circle cx="128" cy="128" r="48"></circle>
+                <line x1="128" y1="32" x2="128" y2="80"></line>
+                <line x1="128" y1="176" x2="128" y2="224"></line>
+                <line x1="32" y1="128" x2="80" y2="128"></line>
+                <line x1="176" y1="128" x2="224" y2="128"></line>
+              </svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="cert-status cert-status--progress">In Progress</span>
+              <button class="cert-view-btn" aria-label="View status details" data-cert-title="Cisco Certified Network Associate" data-cert-progress="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z"/>
+                  <circle cx="128" cy="128" r="40"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <h3 class="cert-name">Cisco Certified Network Associate</h3>
+          <p class="cert-issuer">Cisco Systems</p>
+          <p class="cert-desc">Covers networking fundamentals, IP connectivity, IP services, security fundamentals, and
+            automation. Simulations conducted in Cisco Packet Tracer.</p>
+          <div class="cert-tags">
+            <span class="cert-tag">TCP/IP</span>
+            <span class="cert-tag">OSPF</span>
+            <span class="cert-tag">VLANs</span>
+            <span class="cert-tag">ACLs</span>
+          </div>
+        </div>
+
+        <!-- Cert 2: QGIS Certification -->
+        <div class="cert-card fade-up delay-1" tabindex="0">
+          <div class="cert-card-top">
+            <div class="cert-issuer-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="none"
+                stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="96 16 16 56 16 208 96 168 176 208 240 168 240 16 176 56 96 16" />
+                <line x1="96" y1="16" x2="96" y2="168" />
+                <line x1="176" y1="56" x2="176" y2="208" />
+              </svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="cert-status cert-status--earned">Earned</span>
+              <button class="cert-view-btn" aria-label="View Certificate" data-cert-img="gis by matt forest.jpg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z"/>
+                  <circle cx="128" cy="128" r="40"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <h3 class="cert-name">QGIS Certification</h3>
+          <p class="cert-issuer">Modern GIS</p>
+          <p class="cert-desc">Validated proficiency in Geographic Information Systems (GIS) and open-source QGIS software. Covered spatial data analysis, map design, and cartography principles under Matt Forrest.</p>
+          <div class="cert-tags">
+            <span class="cert-tag">QGIS</span>
+            <span class="cert-tag">GIS</span>
+            <span class="cert-tag">Spatial Analysis</span>
+            <span class="cert-tag">Cartography</span>
+          </div>
+        </div>
+
+        <!-- Cert 3: Python Programming -->
+        <div class="cert-card fade-up delay-2" tabindex="0">
+          <div class="cert-card-top">
+            <div class="cert-issuer-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="none"
+                stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="64 88 16 128 64 168"></polyline>
+                <polyline points="192 88 240 128 192 168"></polyline>
+                <line x1="160" y1="40" x2="96" y2="216"></line>
+              </svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="cert-status cert-status--earned">Earned</span>
+              <button class="cert-view-btn" aria-label="View Certificate" data-cert-img="python10proj by federico azzuro.jpeg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z"/>
+                  <circle cx="128" cy="128" r="40"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <h3 class="cert-name">Learn Python By Coding: 10 Projects</h3>
+          <p class="cert-issuer">Udemy · Federico Azzurro</p>
+          <p class="cert-desc">Hands-on project-based certification focused on building 10 diverse Python applications, reinforcing programming fundamentals, object-oriented design, and automation scripting.</p>
+          <div class="cert-tags">
+            <span class="cert-tag">Python</span>
+            <span class="cert-tag">OOP</span>
+            <span class="cert-tag">Automation</span>
+            <span class="cert-tag">Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title fade-up">My Projects & Labs</h2>
+      <div class="divider fade-up delay-1" aria-hidden="true"></div>
+
+      <div class="projects-grid" aria-label="Project showcase grid">
+
+        <!-- Project 1: CCNA Network Labs -->
+        <div class="card project-card fade-up" tabindex="0">
+          <span class="project-number" aria-hidden="true">01</span>
+          <div class="project-card-inner">
+            <span class="project-category">Network Engineering</span>
+            <h3>Cisco Network Lab Simulations</h3>
+            <p>Designed comprehensive routing and switching structures in Cisco Packet Tracer. Configured VLAN trunking,
+              IPv4 subnetting, DHCP helpers, and inter-VLAN routing.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">Cisco IOS</span>
+              <span class="project-tech">VLAN</span>
+              <span class="project-tech">DHCP</span>
+              <span class="project-tech">Packet Tracer</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MohammadMudassirmk" target="_blank" rel="noopener noreferrer"
+                class="project-btn" aria-label="View Cisco Network labs source repositories">Labs Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Real School Platform -->
+        <div class="card project-card fade-up delay-1" tabindex="0">
+          <span class="project-number" aria-hidden="true">02</span>
+          <div class="project-card-inner">
+            <span class="project-category">Full-Stack Web</span>
+            <h3>Real School Website (Under Development)</h3>
+            <p>Developing a secure educational platform with authentication, role-based access control, backend
+              functionality, database integration, and security-focused development practices.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">Python</span>
+              <span class="project-tech">Django</span>
+              <span class="project-tech">SQLite</span>
+              <span class="project-tech">RBAC</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MohammadMudassirmk" target="_blank" rel="noopener noreferrer"
+                class="project-btn" aria-label="View Real School Platform source code">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: ALTRONAUT -->
+        <div class="card project-card fade-up" tabindex="0">
+          <span class="project-number" aria-hidden="true">03</span>
+          <div class="project-card-inner">
+            <span class="project-category">Alternative Finder</span>
+            <h3>ALTRONAUT</h3>
+            <p>Built a full-stack alternative finder platform featuring authentication, REST APIs, database integration,
+              and secure session management.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">Flask</span>
+              <span class="project-tech">SQLAlchemy</span>
+              <span class="project-tech">Scrapy</span>
+              <span class="project-tech">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MohammadMudassirmk/Altronaut" target="_blank" rel="noopener noreferrer"
+                class="project-btn" aria-label="View ALTRONAUT code repository">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Biznoid -->
+        <div class="card project-card fade-up delay-1" tabindex="0">
+          <span class="project-number" aria-hidden="true">04</span>
+          <div class="project-card-inner">
+            <span class="project-category">Idea Validation</span>
+            <h3>Biznoid</h3>
+            <p>Developed a business idea validation platform with backend logic, database operations, and interactive
+              user workflows.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">Python</span>
+              <span class="project-tech">PostgreSQL</span>
+              <span class="project-tech">Workflows</span>
+              <span class="project-tech">Flask</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MohammadMudassirmk/Biznoid" target="_blank" rel="noopener noreferrer"
+                class="project-btn" aria-label="View Biznoid platform code repository">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Mark-It-Down -->
+        <div class="card project-card fade-up" tabindex="0">
+          <span class="project-number" aria-hidden="true">05</span>
+          <div class="project-card-inner">
+            <span class="project-category">Markdown Utility</span>
+            <h3>Mark-It-Down</h3>
+            <p>Built a lightweight document parser and converter utility that translates text and rich-text files into clean, standardized Markdown format.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">Python</span>
+              <span class="project-tech">Markdown</span>
+              <span class="project-tech">Parser</span>
+              <span class="project-tech">CLI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MohammadMudassirmk/Mark-It-Down" target="_blank" rel="noopener noreferrer"
+                class="project-btn" aria-label="View Mark-It-Down code repository">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: mkFileShare -->
+        <div class="card project-card fade-up delay-1" tabindex="0">
+          <span class="project-number" aria-hidden="true">06</span>
+          <div class="project-card-inner">
+            <span class="project-category">Web Application</span>
+            <h3>mkFileShare</h3>
+            <p>Developed a secure web platform for file sharing featuring user authentication, file size constraints, time-bound access links, and download limits.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">Flask</span>
+              <span class="project-tech">Python</span>
+              <span class="project-tech">SQLite</span>
+              <span class="project-tech">Security</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MohammadMudassirmk/mkFileShare" target="_blank" rel="noopener noreferrer"
+                class="project-btn" aria-label="View mkFileShare code repository">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Resume2Portfolio -->
+        <div class="card project-card fade-up delay-2" tabindex="0">
+          <span class="project-number" aria-hidden="true">07</span>
+          <div class="project-card-inner">
+            <span class="project-category">Automation Utility</span>
+            <h3>Resume2Portfolio</h3>
+            <p>Created an automated parsing utility that extracts details from resume documents (PDF/DOCX) to dynamically generate structured web portfolio layouts.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">Python</span>
+              <span class="project-tech">Parsing</span>
+              <span class="project-tech">HTML/CSS</span>
+              <span class="project-tech">Web Gen</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/MohammadMudassirmk/Resume2Portfolio" target="_blank" rel="noopener noreferrer"
+                class="project-btn" aria-label="View Resume2Portfolio code repository">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Get In Touch</h2>
+      <p class="section-subtitle fade-up delay-1">Feel free to reach out.</p>
+      <div class="contact-grid fade-up delay-1">
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <span>Mumbai, India</span>
+        </div>
+
+        <!-- Email -->
+        <a href="mailto:mmkforeverything@gmail.com" class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </div>
+          <span>mmkforeverything@gmail.com</span>
+        </a>
+      </div>
+
+
+      <!-- Social Media -->
+      <div class="social-links-row fade-up delay-1">
+        <a href="https://github.com/MohammadMudassirmk" target="_blank" rel="noopener noreferrer"
+          class="social-icon-btn" aria-label="GitHub Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+            <path d="M9 18c-4.51 2-5-2-7-2" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/mohammad-mudassir-9a3b672a9" target="_blank" rel="noopener noreferrer"
+          class="social-icon-btn" aria-label="LinkedIn Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Resume PDF -->
+      <div class="fade-up delay-1" style="margin-bottom: 3rem;">
+        <a class="fancy" href="resume.pdf" download="MudassirResume.pdf" aria-label="Download Resume as PDF">
+          <span class="top-key" aria-hidden="true"></span>
+          <span class="text">Download Resume</span>
+          <span class="bottom-key-1" aria-hidden="true"></span>
+          <span class="bottom-key-2" aria-hidden="true"></span>
+        </a> 
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-left">
+        <p>&copy; 2026 Mohammad Mudassir Khan. All rights reserved.</p>
+        <p class="footer-tagline">Connecting networks, securing systems, writing code.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="https://github.com/MohammadMudassirmk" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/mohammad-mudassir-9a3b672a9" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal -->
+  <div id="certModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="200" y1="56" x2="56" y2="200"/>
+          <line x1="56" y1="56" x2="200" y2="200"/>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <div id="modalPlaceholder" class="modal-placeholder-box" style="display: none;">
+          <h3 id="modalPlaceholderTitle">Certification</h3>
+          <p>This certification is currently in progress.</p>
+        </div>
+        <img id="modalImg" src="" alt="Certificate Image" style="display: none;">
+      </div>
+    </div>
+  </div>
+
+  <!-- SVG Noise Filter for Background Depth -->
+  <svg style="display: none;" aria-hidden="true">
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.015 0" />
+    </filter>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
